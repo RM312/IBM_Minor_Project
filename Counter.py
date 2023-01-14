@@ -93,7 +93,7 @@ class Application(tk.Frame):
     def quit(nift):
         """quit the window"""
         if tk.messagebox.askokcancel("Quit", "Do you want to quit?"):
-            root.destroy()
+            rm.destroy()
 
     def pause(nift):
         """Pause timer"""
@@ -118,7 +118,7 @@ class Application(tk.Frame):
 
 if __name__ == "__main__":
     """Main loop of timer"""
-    root = tk.Tk()
-    root.title("TIMER")
-    Application(root).pack(side="top", fill="both", expand=True)
-    root.mainloop()
+    rm = tk.Tk()
+    rm.title("TIMER")
+    Application(rm).pack(side="top", fill="both", expand=True)
+    rm.mainloop()
